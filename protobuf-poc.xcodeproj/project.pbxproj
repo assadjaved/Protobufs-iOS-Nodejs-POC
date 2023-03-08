@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		146A3E558C6C9B2F0E71B95F /* Pods_protobuf_poc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FA7D012FCEEBE51078F530 /* Pods_protobuf_poc.framework */; };
+		664CCD2A769A0157442DD20F /* Pods_protobuf_poc_protobuf_pocUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A280E1A15C1A8256B9DDCF0 /* Pods_protobuf_poc_protobuf_pocUITests.framework */; };
+		D9FAEE208779859585E79D4A /* Pods_protobuf_pocTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3146174CAB2274BD2A4004 /* Pods_protobuf_pocTests.framework */; };
+		EC39C21829B27BC700C3C946 /* BookInfo.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C21729B27BC700C3C946 /* BookInfo.pb.swift */; };
+		EC39C21A29B5BA4D00C3C946 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39C21929B5BA4D00C3C946 /* ViewModel.swift */; };
+		ECC9A52629B2799D00B366CA /* protobuf_pocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC9A52529B2799D00B366CA /* protobuf_pocApp.swift */; };
+		ECC9A52829B2799D00B366CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC9A52729B2799D00B366CA /* ContentView.swift */; };
+		ECC9A52A29B2799E00B366CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC9A52929B2799E00B366CA /* Assets.xcassets */; };
+		ECC9A52E29B2799E00B366CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC9A52D29B2799E00B366CA /* Preview Assets.xcassets */; };
+		ECC9A53829B2799E00B366CA /* protobuf_pocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC9A53729B2799E00B366CA /* protobuf_pocTests.swift */; };
+		ECC9A54229B2799E00B366CA /* protobuf_pocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC9A54129B2799E00B366CA /* protobuf_pocUITests.swift */; };
+		ECC9A54429B2799E00B366CA /* protobuf_pocUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC9A54329B2799E00B366CA /* protobuf_pocUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECC9A53429B2799E00B366CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECC9A51A29B2799D00B366CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECC9A52129B2799D00B366CA;
+			remoteInfo = "protobuf-poc";
+		};
+		ECC9A53E29B2799E00B366CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECC9A51A29B2799D00B366CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECC9A52129B2799D00B366CA;
+			remoteInfo = "protobuf-poc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18067BCAEFD7E13DEB2750EC /* Pods-protobuf-pocTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protobuf-pocTests.release.xcconfig"; path = "Target Support Files/Pods-protobuf-pocTests/Pods-protobuf-pocTests.release.xcconfig"; sourceTree = "<group>"; };
+		46ED457BD1C08DFE6F889F98 /* Pods-protobuf-poc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protobuf-poc.debug.xcconfig"; path = "Target Support Files/Pods-protobuf-poc/Pods-protobuf-poc.debug.xcconfig"; sourceTree = "<group>"; };
+		4C3146174CAB2274BD2A4004 /* Pods_protobuf_pocTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_protobuf_pocTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51064D39047DC26D57876042 /* Pods-protobuf-poc-protobuf-pocUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protobuf-poc-protobuf-pocUITests.release.xcconfig"; path = "Target Support Files/Pods-protobuf-poc-protobuf-pocUITests/Pods-protobuf-poc-protobuf-pocUITests.release.xcconfig"; sourceTree = "<group>"; };
+		54F5170B301B1E03B2939EEC /* Pods-protobuf-poc-protobuf-pocUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protobuf-poc-protobuf-pocUITests.debug.xcconfig"; path = "Target Support Files/Pods-protobuf-poc-protobuf-pocUITests/Pods-protobuf-poc-protobuf-pocUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A280E1A15C1A8256B9DDCF0 /* Pods_protobuf_poc_protobuf_pocUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_protobuf_poc_protobuf_pocUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33DBD27C49F4DDA4CBDC948 /* Pods-protobuf-poc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protobuf-poc.release.xcconfig"; path = "Target Support Files/Pods-protobuf-poc/Pods-protobuf-poc.release.xcconfig"; sourceTree = "<group>"; };
+		C38BCD598A07D47E4A47D552 /* Pods-protobuf-pocTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protobuf-pocTests.debug.xcconfig"; path = "Target Support Files/Pods-protobuf-pocTests/Pods-protobuf-pocTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2FA7D012FCEEBE51078F530 /* Pods_protobuf_poc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_protobuf_poc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC39C21729B27BC700C3C946 /* BookInfo.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookInfo.pb.swift; sourceTree = "<group>"; };
+		EC39C21929B5BA4D00C3C946 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		ECC9A52229B2799D00B366CA /* protobuf-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "protobuf-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC9A52529B2799D00B366CA /* protobuf_pocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protobuf_pocApp.swift; sourceTree = "<group>"; };
+		ECC9A52729B2799D00B366CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ECC9A52929B2799E00B366CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECC9A52B29B2799E00B366CA /* protobuf_poc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = protobuf_poc.entitlements; sourceTree = "<group>"; };
+		ECC9A52D29B2799E00B366CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECC9A53329B2799E00B366CA /* protobuf-pocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "protobuf-pocTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC9A53729B2799E00B366CA /* protobuf_pocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protobuf_pocTests.swift; sourceTree = "<group>"; };
+		ECC9A53D29B2799E00B366CA /* protobuf-pocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "protobuf-pocUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC9A54129B2799E00B366CA /* protobuf_pocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protobuf_pocUITests.swift; sourceTree = "<group>"; };
+		ECC9A54329B2799E00B366CA /* protobuf_pocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protobuf_pocUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECC9A51F29B2799D00B366CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				146A3E558C6C9B2F0E71B95F /* Pods_protobuf_poc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC9A53029B2799E00B366CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9FAEE208779859585E79D4A /* Pods_protobuf_pocTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC9A53A29B2799E00B366CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664CCD2A769A0157442DD20F /* Pods_protobuf_poc_protobuf_pocUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25390E5933B43712B7351601 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46ED457BD1C08DFE6F889F98 /* Pods-protobuf-poc.debug.xcconfig */,
+				A33DBD27C49F4DDA4CBDC948 /* Pods-protobuf-poc.release.xcconfig */,
+				54F5170B301B1E03B2939EEC /* Pods-protobuf-poc-protobuf-pocUITests.debug.xcconfig */,
+				51064D39047DC26D57876042 /* Pods-protobuf-poc-protobuf-pocUITests.release.xcconfig */,
+				C38BCD598A07D47E4A47D552 /* Pods-protobuf-pocTests.debug.xcconfig */,
+				18067BCAEFD7E13DEB2750EC /* Pods-protobuf-pocTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AFD533AED0D4165044D627C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2FA7D012FCEEBE51078F530 /* Pods_protobuf_poc.framework */,
+				8A280E1A15C1A8256B9DDCF0 /* Pods_protobuf_poc_protobuf_pocUITests.framework */,
+				4C3146174CAB2274BD2A4004 /* Pods_protobuf_pocTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECC9A51929B2799D00B366CA = {
+			isa = PBXGroup;
+			children = (
+				ECC9A52429B2799D00B366CA /* protobuf-poc */,
+				ECC9A53629B2799E00B366CA /* protobuf-pocTests */,
+				ECC9A54029B2799E00B366CA /* protobuf-pocUITests */,
+				ECC9A52329B2799D00B366CA /* Products */,
+				25390E5933B43712B7351601 /* Pods */,
+				AFD533AED0D4165044D627C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ECC9A52329B2799D00B366CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECC9A52229B2799D00B366CA /* protobuf-poc.app */,
+				ECC9A53329B2799E00B366CA /* protobuf-pocTests.xctest */,
+				ECC9A53D29B2799E00B366CA /* protobuf-pocUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECC9A52429B2799D00B366CA /* protobuf-poc */ = {
+			isa = PBXGroup;
+			children = (
+				EC39C21729B27BC700C3C946 /* BookInfo.pb.swift */,
+				EC39C21929B5BA4D00C3C946 /* ViewModel.swift */,
+				ECC9A52529B2799D00B366CA /* protobuf_pocApp.swift */,
+				ECC9A52729B2799D00B366CA /* ContentView.swift */,
+				ECC9A52929B2799E00B366CA /* Assets.xcassets */,
+				ECC9A52B29B2799E00B366CA /* protobuf_poc.entitlements */,
+				ECC9A52C29B2799E00B366CA /* Preview Content */,
+			);
+			path = "protobuf-poc";
+			sourceTree = "<group>";
+		};
+		ECC9A52C29B2799E00B366CA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ECC9A52D29B2799E00B366CA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ECC9A53629B2799E00B366CA /* protobuf-pocTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECC9A53729B2799E00B366CA /* protobuf_pocTests.swift */,
+			);
+			path = "protobuf-pocTests";
+			sourceTree = "<group>";
+		};
+		ECC9A54029B2799E00B366CA /* protobuf-pocUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECC9A54129B2799E00B366CA /* protobuf_pocUITests.swift */,
+				ECC9A54329B2799E00B366CA /* protobuf_pocUITestsLaunchTests.swift */,
+			);
+			path = "protobuf-pocUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECC9A52129B2799D00B366CA /* protobuf-poc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC9A54729B2799E00B366CA /* Build configuration list for PBXNativeTarget "protobuf-poc" */;
+			buildPhases = (
+				697848A4A111FEECF4F0BE78 /* [CP] Check Pods Manifest.lock */,
+				ECC9A51E29B2799D00B366CA /* Sources */,
+				ECC9A51F29B2799D00B366CA /* Frameworks */,
+				ECC9A52029B2799D00B366CA /* Resources */,
+				178C8E4F0002E9C77DDBD99B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "protobuf-poc";
+			productName = "protobuf-poc";
+			productReference = ECC9A52229B2799D00B366CA /* protobuf-poc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECC9A53229B2799E00B366CA /* protobuf-pocTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC9A54A29B2799E00B366CA /* Build configuration list for PBXNativeTarget "protobuf-pocTests" */;
+			buildPhases = (
+				E8FF5DBC0CD4ADA129451F9E /* [CP] Check Pods Manifest.lock */,
+				ECC9A52F29B2799E00B366CA /* Sources */,
+				ECC9A53029B2799E00B366CA /* Frameworks */,
+				ECC9A53129B2799E00B366CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECC9A53529B2799E00B366CA /* PBXTargetDependency */,
+			);
+			name = "protobuf-pocTests";
+			productName = "protobuf-pocTests";
+			productReference = ECC9A53329B2799E00B366CA /* protobuf-pocTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECC9A53C29B2799E00B366CA /* protobuf-pocUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC9A54D29B2799E00B366CA /* Build configuration list for PBXNativeTarget "protobuf-pocUITests" */;
+			buildPhases = (
+				E90235FF7EA457E697253AA3 /* [CP] Check Pods Manifest.lock */,
+				ECC9A53929B2799E00B366CA /* Sources */,
+				ECC9A53A29B2799E00B366CA /* Frameworks */,
+				ECC9A53B29B2799E00B366CA /* Resources */,
+				CBE8927A7C2A49E42F226D8B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECC9A53F29B2799E00B366CA /* PBXTargetDependency */,
+			);
+			name = "protobuf-pocUITests";
+			productName = "protobuf-pocUITests";
+			productReference = ECC9A53D29B2799E00B366CA /* protobuf-pocUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECC9A51A29B2799D00B366CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					ECC9A52129B2799D00B366CA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					ECC9A53229B2799E00B366CA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = ECC9A52129B2799D00B366CA;
+					};
+					ECC9A53C29B2799E00B366CA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = ECC9A52129B2799D00B366CA;
+					};
+				};
+			};
+			buildConfigurationList = ECC9A51D29B2799D00B366CA /* Build configuration list for PBXProject "protobuf-poc" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECC9A51929B2799D00B366CA;
+			productRefGroup = ECC9A52329B2799D00B366CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECC9A52129B2799D00B366CA /* protobuf-poc */,
+				ECC9A53229B2799E00B366CA /* protobuf-pocTests */,
+				ECC9A53C29B2799E00B366CA /* protobuf-pocUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECC9A52029B2799D00B366CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC9A52E29B2799E00B366CA /* Preview Assets.xcassets in Resources */,
+				ECC9A52A29B2799E00B366CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC9A53129B2799E00B366CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC9A53B29B2799E00B366CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		178C8E4F0002E9C77DDBD99B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-protobuf-poc/Pods-protobuf-poc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-protobuf-poc/Pods-protobuf-poc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-protobuf-poc/Pods-protobuf-poc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		697848A4A111FEECF4F0BE78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-protobuf-poc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBE8927A7C2A49E42F226D8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-protobuf-poc-protobuf-pocUITests/Pods-protobuf-poc-protobuf-pocUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-protobuf-poc-protobuf-pocUITests/Pods-protobuf-poc-protobuf-pocUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-protobuf-poc-protobuf-pocUITests/Pods-protobuf-poc-protobuf-pocUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8FF5DBC0CD4ADA129451F9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-protobuf-pocTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E90235FF7EA457E697253AA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-protobuf-poc-protobuf-pocUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECC9A51E29B2799D00B366CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC9A52829B2799D00B366CA /* ContentView.swift in Sources */,
+				EC39C21829B27BC700C3C946 /* BookInfo.pb.swift in Sources */,
+				EC39C21A29B5BA4D00C3C946 /* ViewModel.swift in Sources */,
+				ECC9A52629B2799D00B366CA /* protobuf_pocApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC9A52F29B2799E00B366CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC9A53829B2799E00B366CA /* protobuf_pocTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC9A53929B2799E00B366CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC9A54429B2799E00B366CA /* protobuf_pocUITestsLaunchTests.swift in Sources */,
+				ECC9A54229B2799E00B366CA /* protobuf_pocUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECC9A53529B2799E00B366CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECC9A52129B2799D00B366CA /* protobuf-poc */;
+			targetProxy = ECC9A53429B2799E00B366CA /* PBXContainerItemProxy */;
+		};
+		ECC9A53F29B2799E00B366CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECC9A52129B2799D00B366CA /* protobuf-poc */;
+			targetProxy = ECC9A53E29B2799E00B366CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ECC9A54529B2799E00B366CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECC9A54629B2799E00B366CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		ECC9A54829B2799E00B366CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46ED457BD1C08DFE6F889F98 /* Pods-protobuf-poc.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "protobuf-poc/protobuf_poc.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"protobuf-poc/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.careem.protobuf-poc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECC9A54929B2799E00B366CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A33DBD27C49F4DDA4CBDC948 /* Pods-protobuf-poc.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "protobuf-poc/protobuf_poc.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"protobuf-poc/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.careem.protobuf-poc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECC9A54B29B2799E00B366CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C38BCD598A07D47E4A47D552 /* Pods-protobuf-pocTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.careem.protobuf-pocTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/protobuf-poc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/protobuf-poc";
+			};
+			name = Debug;
+		};
+		ECC9A54C29B2799E00B366CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18067BCAEFD7E13DEB2750EC /* Pods-protobuf-pocTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.careem.protobuf-pocTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/protobuf-poc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/protobuf-poc";
+			};
+			name = Release;
+		};
+		ECC9A54E29B2799E00B366CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F5170B301B1E03B2939EEC /* Pods-protobuf-poc-protobuf-pocUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.careem.protobuf-pocUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "protobuf-poc";
+			};
+			name = Debug;
+		};
+		ECC9A54F29B2799E00B366CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51064D39047DC26D57876042 /* Pods-protobuf-poc-protobuf-pocUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.careem.protobuf-pocUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "protobuf-poc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECC9A51D29B2799D00B366CA /* Build configuration list for PBXProject "protobuf-poc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC9A54529B2799E00B366CA /* Debug */,
+				ECC9A54629B2799E00B366CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC9A54729B2799E00B366CA /* Build configuration list for PBXNativeTarget "protobuf-poc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC9A54829B2799E00B366CA /* Debug */,
+				ECC9A54929B2799E00B366CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC9A54A29B2799E00B366CA /* Build configuration list for PBXNativeTarget "protobuf-pocTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC9A54B29B2799E00B366CA /* Debug */,
+				ECC9A54C29B2799E00B366CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC9A54D29B2799E00B366CA /* Build configuration list for PBXNativeTarget "protobuf-pocUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC9A54E29B2799E00B366CA /* Debug */,
+				ECC9A54F29B2799E00B366CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECC9A51A29B2799D00B366CA /* Project object */;
+}
